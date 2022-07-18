@@ -132,8 +132,8 @@ cabb b bel
 cabb s split
 
 " Plugins
+PlugUpgrade
 call plug#begin(stdpath('config') . '/plugged')
-Plug 'junegunn/vim-plug'
 Plug 'github/copilot.vim'  
 Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
