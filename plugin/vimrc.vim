@@ -70,6 +70,10 @@ set smartindent
 
 let g:PHP_default_indenting = 1
 
+" Relative line numbers
+set number
+set relativenumber
+
 " Custom commands
 let mapleader = " "
 nnoremap <Leader><Space> <Space>
@@ -92,6 +96,10 @@ nnoremap K 5k
 nnoremap g, ^
 nnoremap g. $
 nnoremap <Leader>j J<CR>
+
+" Operator Pending Mode
+onoremap , ^
+onoremap . $
 
 " Split mappings
 nnoremap <C-h> <C-w>h
@@ -123,8 +131,12 @@ nnoremap <silent> <Leader>e :Vex<CR>
 nnoremap <silent> <Leader>/ :noh<CR>
 
 " Command Mode
-command O wincmd o
-command Reload source ~/.config/nvim/init.vim
+  " Commands
+command! O wincmd o
+command! Reload source ~/.config/nvim/init.vim
+
+  " Mappings
+cnoremap <expr><silent> jk getcmdtype() == '/' ? '<CR>:noh<CR>' : 'jk'
 
   " Abbreviations
 cabb v vert
@@ -132,7 +144,6 @@ cabb b bel
 cabb s split
 
 " Plugins
-PlugUpgrade
 call plug#begin(stdpath('config') . '/plugged')
 Plug 'github/copilot.vim'  
 Plug 'ctrlpvim/ctrlp.vim'
