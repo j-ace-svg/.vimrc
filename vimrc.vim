@@ -82,7 +82,6 @@ nnoremap <Leader><Space> <Space>
 " Insert Mode
 inoremap jk <Esc>l
 inoremap kj <Esc>l
-inoremap <C-l> <Return>
 inoremap GG <Esc>bgUiwea
 
   " Abbreviations
