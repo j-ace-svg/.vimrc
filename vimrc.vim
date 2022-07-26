@@ -73,6 +73,7 @@ let g:PHP_default_indenting = 1
 " Relative line numbers
 set number
 set relativenumber
+highlight LineNr ctermfg=darkgrey
 
 " Custom commands
 let mapleader = " "
