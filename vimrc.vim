@@ -75,6 +75,12 @@ set number
 set relativenumber
 highlight LineNr ctermfg=darkgrey
 
+" Faster macros (no redraw until end of macro)
+set lazyredraw
+
+" Enable sidebar fold column
+set foldcolumn=1
+
 " Custom commands
 let mapleader = " "
 nnoremap <Leader><Space> <Space>
