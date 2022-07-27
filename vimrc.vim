@@ -150,7 +150,10 @@ cabb s split
 " Plugins
 call plug#begin(stdpath('config') . '/plugged')
 Plug 'github/copilot.vim'  
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
+
+  " Searching
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
