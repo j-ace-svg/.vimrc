@@ -151,4 +151,6 @@ cabb s split
 call plug#begin(stdpath('config') . '/plugged')
 Plug 'github/copilot.vim'  
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
 call plug#end()
