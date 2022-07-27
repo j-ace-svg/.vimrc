@@ -127,6 +127,9 @@ nnoremap <C-d> <C-y>
 
   " Generic Leader mappings
 nnoremap <silent> <Leader>w :w<CR>
+nnoremap <silent> <Leader>q :q<CR>
+nnoremap <silent> <Leader>Q :q!<CR>
+nnoremap <silent> <Leader>o :x<CR>
 nnoremap <silent> <Leader>e :Vex<CR>
 nnoremap <silent> <Leader>/ :noh<CR>
 
@@ -136,7 +139,7 @@ command! O wincmd o
 command! Reload source ~/.config/nvim/init.vim
 
   " Mappings
-cnoremap <expr><silent> jk getcmdtype() == '/' ? '<CR>:noh<CR>' : 'jk'
+cnoremap <expr><silent> jk getcmdtype() == '/' ? '<CR>:noh<CR>' : getcmdtype() == '?' ? '<CR>:noh<CR>' : 'jk'
 
   " Abbreviations
 cabb v vert
