@@ -106,10 +106,10 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-nnoremap <C-H> <C-w><
-nnoremap <C-K> <C-w>+
-nnoremap <C-J> <C-w>-
-nnoremap <C-L> <C-w>>
+nnoremap <C-S-h> <C-w><
+nnoremap <C-S-k> <C-w>+
+nnoremap <C-S-j> <C-w>-
+nnoremap <C-S-l> <C-w>>
 nnoremap <Leader>sh <C-w><
 nnoremap <Leader>sk <C-w>+
 nnoremap <Leader>sj <C-w>-
