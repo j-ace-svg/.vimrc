@@ -126,9 +126,6 @@ nnoremap <silent> <Leader>tn :tabnext<CR>
 nnoremap <silent> <Leader>tp :tabprev<CR>
 nnoremap <silent> <Leader>to :tabo<CR>
 
-  " Better scrolling
-nnoremap <C-d> <C-y> 
-
   " Generic Leader mappings
 nnoremap <silent> <Leader>w :w<CR>
 nnoremap <silent> <Leader>q :q<CR>
