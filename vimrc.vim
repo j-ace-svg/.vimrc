@@ -130,8 +130,8 @@ nnoremap <silent> <Leader>to :tabo<CR>
 
   " Generic Leader mappings
 nnoremap <silent> <Leader>w :w<CR>
-nnoremap <silent> <Leader>q :q<CR>
-nnoremap <silent> <Leader>Q :q!<CR>
+nnoremap <silent> <Leader>q :bd<CR>
+nnoremap <silent> <Leader>Q :bd!<CR>
 nnoremap <silent> <Leader>o :x<CR>
 nnoremap <silent> <Leader>e :Vex<CR>
 nnoremap <silent> <Leader>/ :noh<CR>
