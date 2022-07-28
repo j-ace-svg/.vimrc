@@ -143,6 +143,8 @@ nnoremap <Leader>gp :Git push -u
 nnoremap <Leader>gr :Git pull
 nnoremap <silent> <Leader>gl :Git log<CR>
 nnoremap <Leader>ga :Git add
+nnoremap <Leader>gb :Git branch
+nnoremap <Leader>go :Git checkout
 
 " Command Mode
   " Commands
