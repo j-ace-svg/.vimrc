@@ -138,10 +138,11 @@ nnoremap <silent> <Leader>/ :noh<CR>
 
   " Git Leader mappings
 nnoremap <silent> <Leader>gs :Git status<CR>
+nnoremap <silent> <Leader>gl :Git log<CR>
+nnoremap <silent> <Leader>gd :Git diff<CR>
 nnoremap <Leader>gc :Git commit
 nnoremap <Leader>gp :Git push -u
 nnoremap <Leader>gr :Git pull
-nnoremap <silent> <Leader>gl :Git log<CR>
 nnoremap <Leader>ga :Git add
 nnoremap <Leader>gb :Git branch
 nnoremap <Leader>go :Git checkout
@@ -161,7 +162,9 @@ cabb s split
 
   " Git abbreviations
 cabb g Git
+cabb gd Git diff
 cabb gls Git ls-files
+cabb gsh Git stash
 
 " Plugins
 call plug#begin(stdpath('config') . '/plugged')
