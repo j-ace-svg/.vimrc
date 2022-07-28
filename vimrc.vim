@@ -136,6 +136,14 @@ nnoremap <silent> <Leader>o :x<CR>
 nnoremap <silent> <Leader>e :Vex<CR>
 nnoremap <silent> <Leader>/ :noh<CR>
 
+  " Git Leader mappings
+nnoremap <silent> <Leader>gs :Git status<CR>
+nnoremap <Leader>gc :Git commit
+nnoremap <Leader>gp :Git push -u
+nnoremap <Leader>gr :Git pull
+nnoremap <silent> <Leader>gl :Git log<CR>
+nnoremap <Leader>ga :Git add
+
 " Command Mode
   " Commands
 command! O wincmd o
@@ -144,10 +152,14 @@ command! Reload source ~/.config/nvim/init.vim
   " Mappings
 cnoremap <expr><silent> jk getcmdtype() == '/' ? '<CR>:noh<CR>' : getcmdtype() == '?' ? '<CR>:noh<CR>' : 'jk'
 
-  " Abbreviations
+  " Split abbreviations
 cabb v vert
 cabb b bel
 cabb s split
+
+  " Git abbreviations
+cabb g Git
+cabb gls Git ls-files
 
 " Plugins
 call plug#begin(stdpath('config') . '/plugged')
